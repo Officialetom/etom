@@ -1,0 +1,102 @@
+/* -----------------------gallary contain-------------------- */
+.gallary-display
+{
+    background-color: rgb(247, 246, 246);
+    padding:50px  30px;
+    display: grid;
+}
+
+.gallary-display > h2
+{
+    margin: 45px auto;
+    font-size: 45px;
+    border-bottom: 2px solid black;
+    
+}
+
+.gallary-contain
+{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gal-btn
+{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    display: grid;
+    margin: auto;
+}
+
+.gal-btn:hover
+{
+    background-color: white;
+    color: black;
+    border: 1px solid black ;
+    cursor: pointer;
+    box-shadow: 4px 6px black;
+}
+
+.gal-item
+{
+    background-color: white;
+    padding: 25px;
+    font-size: .9rem;
+    line-height: 2;
+    border: 1px solid black;
+    transition: .5s ease;
+}
+
+.gal-item
+{
+    /* box-shadow: 5px 8px rgb(246, 124, 124); */
+    box-shadow: 5px 8px rgb(0, 0, 0);
+}
+
+.gal-item > img
+{
+    max-width: 300px;
+    max-height: 314px;
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    display: grid;
+    margin: 0 auto;
+}
+
+.gal-item > code
+{
+    font-size: 20px;
+}
+
+.gal-item:hover
+{
+    transform: translateY(-20px);
+}
+
+
+@media (max-width: 1350px)
+{
+        .gallary-contain
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 850px)
+{
+        .gallary-contain
+    {
+        grid-template-columns: 1fr;
+    }
+    .gal-item > img
+    {
+        height: fit-content;
+    }
+}
+

@@ -1,0 +1,39 @@
+.thank-you-section
+{
+    text-align: center;
+    display: grid;
+    /* padding: 75px 0px; */
+    height: 80vh;
+}
+
+.text-section
+{
+    margin: auto;
+}
+
+.text-section > p
+{
+    font-size: 50px;
+}
+
+.text-section > a
+{
+    text-decoration: none;
+    color: black;
+    transition: .5s ease;
+}
+
+.text-section > a:hover
+{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 750px)
+{
+    .text-section > p
+    {
+        font-size: 30px;
+    }
+}
